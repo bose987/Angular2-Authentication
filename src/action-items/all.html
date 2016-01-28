@@ -1,0 +1,31 @@
+<div class="expense">
+	<h1 class="page-header">Notifications</h1>
+	<div class="table-class">
+		<div class="table-heading">
+			<div class="table-cell">Sr.No.</div>
+			<div class="table-cell">Name</div>
+			<div class="table-cell">Description</div>
+			<div class="table-cell">Amount</div>
+			<div class="table-cell" style="text-align:center;">Approve/Reject</div>
+			<div class="table-cell" style="text-align:center;">Comment</div>
+		</div>
+		<div class="table-row" *ngFor="#jsonData of arrjsonData">
+			<div class="table-cell">{{jsonData.id}}</div>
+			<div class="table-cell">{{jsonData.name}}</div>
+			<div class="table-cell">{{jsonData.description}}</div>
+			<div class="table-cell">{{jsonData.amount}}</div>
+			<div class="table-cell" style="text-align:center;">
+				<button class="btn btn-primary" style="margin-right:10px;">
+					<i class="fa fa-thumbs-up"></i>
+				</button>
+				<button class="btn btn-danger">
+					<i class="fa fa-thumbs-down"></i>
+				</button>
+			</div>
+			<div class="table-cell" style="text-align:center;">
+				<textarea id="comment_4" class="form-control"></textarea>
+			</div>
+		</div>
+	</div>
+</div>
+

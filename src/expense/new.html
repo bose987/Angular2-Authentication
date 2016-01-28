@@ -1,0 +1,39 @@
+<div class="expense">
+	<h1 class="page-header">New expense</h1>
+	<form>
+		<div class="row">
+			<div class="form-group col-md-6 col-lg-6 col-sm-12 col-xs-12">
+				<label>Expense Name *</label>
+				<input type="text" required="" class="form-control">
+			</div>
+		</div>
+		<div class="row">
+			<div class="form-group col-md-6 col-lg-6 col-sm-12 col-xs-12">
+				<label>Expense type *</label>
+				<select required="" class="form-control">
+					<option value="1">Traveling</option>
+					<option value="1">Technical</option>
+				</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class=" form-group col-md-6 col-lg-6 col-sm-12 col-xs-12">
+				<label>Expense Amount *</label>
+				<input type="text" pattern="[0-9]*" required="" class="form-control">
+			</div>
+		</div>
+		<div class="row">
+			<div class="form-group col-md-6 col-lg-6 col-sm-12 col-xs-12">
+				<label>Expense Description *</label>
+				<textarea class="form-control" required="" rows="5"></textarea>
+			</div>
+		</div>
+		<div class="row">
+			<div class="form-group col-md-6 col-lg-6 col-sm-12 col-xs-12">
+				<a class="btn btn-warning cancel-btn" href="/dashboard">Cancel</a>
+				<span></span>
+				<input type="submit" class="btn btn-primary" value="Submit">
+			</div>
+		</div>
+	</form>
+</div>

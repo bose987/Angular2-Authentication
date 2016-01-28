@@ -1,0 +1,20 @@
+<div id="login-form">
+	<section class="login-section">
+		<div class="login">
+			<form role="form" (submit)="login($event, email.value, password.value)">
+				<ul class="ul-list">
+					<li>
+						<input type="email" #email required="" class="input" placeholder="Your Email"><span class="icon"><i class="fa fa-user"></i></span>
+						
+					</li>
+					<li>
+						<input type="password" #password required="" class="input" placeholder="Password"><span class="icon"><i class="fa fa-lock"></i></span>
+					</li>
+					<li>
+						<input type="submit" value="SIGN IN" class="btn btn-login">
+					</li>
+				</ul>
+			</form>
+		</div>
+	</section>
+</div>
